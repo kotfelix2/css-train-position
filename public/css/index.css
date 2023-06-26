@@ -1,118 +1,181 @@
 .task1 .item {
+  position: relative;
+  left: 200px;
+  top: 150px;
 }
 
 .task2 .item {
+  position: relative;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
 }
 
 .task3 .item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .container4 {
+  position: relative;
 }
 
 .task4 {
   width: 1000px;
 }
 .task4 .item {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 40px);
 }
 
 .task5 .item1 {
   background-color: red;
+  position: absolute;
+  z-index: 4;
+  left: 20px;
+  top: 20px;
 }
 .task5 .item2 {
+  background-color: blue;
+  position: absolute;
+  z-index: 2;
+  left: 40px;
+  top: 40px;
 }
 .task5 .item3 {
   background-color: green;
+  position: absolute;
+  z-index: 6;
 }
 
 .task6 .item {
+  float: left;
 }
 
 .task7 .item {
+  float: right;
 }
 
 .task8 .item1 {
+  position: absolute;
+  left: 0px;
+  float: none;
 }
 .task8 .item2 {
+  position: absolute;
+  right: 0px;
   height: 120px;
+  float: none;
 }
 
 .task8 p {
+  position: absolute;
+  top: 120px;
 }
 
 .task9 .item1 {
   height: 200px;
+  position: absolute;
+  left: 0px;
+  float: left;
 }
 .task9 .item2 {
+  position: absolute;
+  right: 0px;
+  clear: right;
 }
 .task9 p {
+  position: absolute;
+  top: 100px;
 }
 
 .task10 .item1 {
+  position: absolute;
+  left: 0px;
+  float: left;
 }
 .task10 .item2 {
+  height: 200px;
+  position: absolute;
+  right: 0px;
+  float: right;
 }
 .task10 p {
+  clear: both;
 }
 
 .task11 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .task12 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .task13 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: fill;
 }
 
 .task14 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: scale-down;
 }
 
 .task15 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: center right;
 }
 
 .task16 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: top left;
 }
 
 .task17 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: bottom center;
 }
 
 .task18 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: 40px 25px;
 }
 
 .task19 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: center;
 }
 
 .task20 {
+  user-select: none;
 }
 
-.task21 {
+.task21 > p {
+  user-select: all;
 }
 
 .task22 {
+  caret-color: blue;
 }
 
 html {
+  scroll-behavior: smooth;
 }
